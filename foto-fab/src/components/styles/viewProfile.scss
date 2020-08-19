@@ -1,0 +1,20 @@
+.profile {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+  overflow: hidden;
+
+  img {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile {
+    height: 30px;
+    width: 30px;
+  }
+}

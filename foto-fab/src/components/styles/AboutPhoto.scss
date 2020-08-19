@@ -1,0 +1,107 @@
+.login-photo {
+    .login-photo-container {
+        height: 100vh;
+        width: 50vw;
+
+        .info {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.338);
+            color: #fff;
+
+            .logo-area {
+                margin-top: 70px;
+                position: absolute;
+            }
+
+            .info-para {
+                height: 100%;
+                width: 100%;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: left;
+
+                h1 {
+                    font-size: 45px;
+                    margin-bottom: 20px;
+                    color: white;
+                }
+
+                p {
+                    font-weight: 500;
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                    letter-spacing: 2px;
+                }
+            }
+
+            .down-arrow {
+                display: none;
+
+                .circle {
+                    background: rgba(253, 253, 253, 0.966);
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                    overflow: hidden;
+
+                    &:hover {
+                        transform: translateY(10px);
+                        transition: transform 1s;
+                    }
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 50%;
+
+                        &:hover {
+                            opacity: 70%;
+                            box-shadow: 2px 2px 3px black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .login-photo .login-photo-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px 20px;
+
+        .info .info-para {
+            padding: 20px;
+
+            h1 {
+                font-size: 30px;
+            }
+        }
+
+        .info .info-para .down-arrow {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+            div {
+                span {
+                    font-weight: 700;
+                    font-size: 18px;
+
+                }
+
+                margin-top: 30px;
+                margin-bottom: 5px;
+            }
+        }
+
+    }
+}

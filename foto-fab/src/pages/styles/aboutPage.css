@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.container .about-page {
+  width: 50%;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container .ab {
+  width: 50%;
+}
+
+.container .ab .ab-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .container .about-page {
+    width: 100%;
+    flex-direction: column;
+  }
+  .container .ab {
+    width: 100%;
+  }
+}

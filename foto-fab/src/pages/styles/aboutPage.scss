@@ -1,0 +1,112 @@
+.container {
+  display: flex;
+  height: 100vh;
+  .about-page {
+    width: 50vw;
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+  }
+  .about-description {
+    width: 50vw;
+    height: 100vh;
+    background-image: url("../img/space.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50vw 100vh;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    justify-content: space-between;
+    text-shadow: 1px 1px 1px #000;
+    h1 {
+      color: #fff;
+      font-size: 38px;
+      margin-bottom: 10px;
+      margin-top: 20px;
+    }
+    p {
+      font-weight: 600;
+      font-size: 24px;
+      text-align: center;
+      padding-top: 20px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+  .about-devs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    padding-top: 20px;
+    .dev-info {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      padding-top: 20px;
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .image-container {
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+          overflow: hidden;
+          border: 5px solid rgba(255, 255, 255, 0.623);
+          box-shadow: inset 0px 0px 0px 10px red;
+          box-sizing: border-box;
+          background: linear-gradient(to right, rgb(0, 38, 255), rgb(204, 0, 255));
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    .about-page {
+      width: 100%;
+      flex-direction: column;
+    }
+    .about-description {
+      width: 100vw;
+      height: 100vh;
+      padding-top: 0;
+      background-size: 100vw;
+      padding-bottom: 100px;
+      h1 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 16px;
+        padding: 20px 60px;
+      }
+      .about-devs {
+        h2 {
+          font-size: 18px;
+        }
+        .dev-info {
+          div {
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

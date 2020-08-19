@@ -1,0 +1,240 @@
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: white;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.459);
+  padding: 2px 0;
+  border-radius: 0px;
+  overflow-x: hidden;
+  position: fixed;
+  z-index: 999;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.brand-title .brand-name {
+  margin-right: 20px;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links ul li {
+  list-style: none;
+  font-weight: 600;
+  width: 100%;
+}
+
+.navbar-links ul li .login-button {
+  font-family: "Montserrat", sans-serif;
+  background-color: none;
+  margin-top: 11px;
+  border-radius: 25px;
+  border: none;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  outline: none;
+  cursor: pointer;
+}
+
+.navbar-links ul li .logout-button {
+  font-family: "Montserrat", sans-serif;
+  background-color: none;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  outline: none;
+  cursor: pointer;
+}
+
+.main-nav {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 0.3rem;
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 50px;
+}
+
+.main-nav:hover {
+  background: linear-gradient(to bottom, #e8edec, #d2d1d3);
+  box-shadow: 0px 3px 20px 0px black;
+  transform: scale(1.2);
+  width: 80%;
+  text-align: center;
+  border-radius: 40px;
+  color: black;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main-nav-active {
+  background: linear-gradient(to bottom, #e8edec, #d2d1d3);
+  box-shadow: 0px 3px 20px 0px black;
+  transform: scale(1.2);
+  width: 80%;
+  text-align: center;
+  border-radius: 40px;
+  color: black;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+  transform: translate(-5%, -50%);
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.toggle-button:hover .bar {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.login-button,
+.logout-button {
+  font-family: "Montserrat", sans-serif;
+  height: 40px;
+  font-size: 20px;
+  width: 120px;
+  border: none;
+  outline: none;
+  text-align: center;
+  border-radius: 3px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 40px;
+}
+
+.login-button:hover,
+.logout-button:hover {
+  animation-name: background-color;
+  animation-duration: 500ms;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  animation-fill-mode: forwards;
+}
+
+.logout-button {
+  background-color: rgba(0, 0, 0, 0.377);
+}
+
+@keyframes background-color {
+  100% {
+    background-color: #000000;
+  }
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+  }
+  .primary-components {
+    display: flex;
+    align-items: center;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    width: 100%;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+  }
+  .navbar-links ul {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-links ul li {
+    margin-top: 20px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-links ul li .login-button,
+  .navbar-links ul li .logout-button {
+    margin-bottom: 30px;
+    margin-right: 0;
+    margin-left: -20px;
+    width: 300px;
+  }
+  .navbar-links ul li .login-button:hover,
+  .navbar-links ul li .logout-button:hover {
+    width: 300px;
+  }
+  .main-nav {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0.2rem;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  .main-nav:hover {
+    background: linear-gradient(to bottom, #e8edec, #d2d1d3);
+    box-shadow: 0px 3px 20px 0px black;
+    transform: scale(1.2);
+    width: 50%;
+    border-radius: 40px;
+    color: black;
+  }
+  .main-nav-active {
+    background: linear-gradient(to bottom, #e8edec, #d2d1d3);
+    box-shadow: 0px 3px 20px 0px black;
+    transform: scale(1.2);
+    width: 50%;
+    text-align: center;
+    border-radius: 40px;
+    color: black;
+  }
+  .navbar-links.active {
+    display: flex;
+    clip-path: circle(800px at 90% -10%);
+    -webkit-clip-path: circle(800px at 90% -10%);
+  }
+  .navbar-links.active ul {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}

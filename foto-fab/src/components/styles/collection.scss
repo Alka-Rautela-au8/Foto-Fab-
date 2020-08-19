@@ -1,0 +1,180 @@
+.collection-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.collection-card {
+  margin: 20px 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.438);
+  border-radius: 4px;
+  padding-top: 30px;
+  width: 320px;
+
+  .collection-grid-1 {
+    opacity: 85%;
+    margin-top: 10px;
+    height: 250px;
+    width: 320px;
+    justify-content: center;
+    overflow: hidden;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 150px 160px;
+    grid-template-areas:
+      "span1 span2"
+      "span3 span2";
+    cursor: pointer;
+
+    .grid-item-11 {
+      height: 125px;
+      width: 150px;
+      grid-area: span1;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .grid-item-12 {
+      height: 250px;
+      width: 160px;
+      grid-area: span2;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .grid-item-13 {
+      grid-area: span3;
+      height: 125px;
+      width: 150px;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    //hover----------
+    &:hover {
+      animation-name: opacity;
+      animation-duration: 500ms;
+      animation-fill-mode: forwards;
+      grid-template-columns: 160px 150px;
+      grid-template-areas:
+        "span1 span2"
+        "span1 span3";
+
+      .grid-item-11 {
+        height: 250px;
+        width: 160px;
+        grid-area: span1;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .grid-item-12 {
+        height: 125px;
+        width: 150px;
+        grid-area: span2;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .grid-item-13 {
+        grid-area: span3;
+        height: 125px;
+        width: 150px;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .collection-grid-2 {
+    display: flex;
+    overflow: hidden;
+    img {
+      height: 250px;
+      width: 320px;
+    }
+  }
+
+  .collection-grid-3 {
+    overflow: hidden;
+    img {
+      height: 250px;
+      width: 320px;
+    }
+  }
+
+  .description-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.664);
+
+    .title {
+      font-weight: 600;
+      font-size: 18px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .count {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .tag-section {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      button {
+        font-family: "Montserrat", sans-serif;
+        height: 30px;
+        margin: 10px;
+        border: none;
+        padding: 4px 7px;
+        color: rgba(0, 0, 0, 0.664);
+        cursor: pointer;
+        outline: none;
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+@keyframes opacity {
+  100% {
+    opacity: 100%;
+  }
+}
+
+@media (min-width: 320px) {
+  .collection-card {
+    padding: 0 0 20px 0;
+  }
+}

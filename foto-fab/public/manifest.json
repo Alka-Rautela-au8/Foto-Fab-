@@ -1,0 +1,51 @@
+{
+    "short_name": "Foto Fab",
+    "name": "Foto-Fab",
+    "icons": [
+        {
+            "src": "favicon.ico",
+            "sizes": "64x64 32x32 24x24 16x16",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "./images/fotofab-72.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        },
+        {
+            "src": "./images/fotofab-96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+
+        {
+            "src": "./images/fotofab-128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "./images/fotofab-144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "./images/fotofab-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "./images/fotofab-384.png",
+            "type": "image/png",
+            "sizes": "384x384"
+        },
+        {
+            "src": "./images/fotofab-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+}

@@ -1,0 +1,71 @@
+.mobile-navbar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-navbar {
+    width: 100vw;
+    height: 55px;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.459);
+    background-color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: auto;
+
+    .home {
+      margin-left: 20px;
+      color: black;
+
+      &:hover {
+        animation-name: color;
+        animation-duration: 500ms;
+        animation-fill-mode: forwards; // the button to stay highlighted.
+      }
+    }
+
+    .submit-photo {
+      color: black;
+
+      &:hover {
+        animation-name: color;
+        animation-duration: 500ms;
+        animation-fill-mode: forwards; // the button to stay highlighted.
+      }
+    }
+
+    .mobile-login {
+      font-family: "Montserrat", sans-serif;
+      height: 35px;
+      width: 100px;
+      margin-right: 20px;
+      font-size: 16px;
+      padding: 0 4px;
+      border: none;
+      outline: none;
+      border-radius: 20px;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.877);
+      &:hover {
+        animation-name: background-color;
+        animation-duration: 500ms;
+        animation-fill-mode: forwards; // the button to stay highlighted.
+      }
+    }
+  }
+}
+
+@keyframes background-color {
+  100% {
+    background-color: #49767e;
+  }
+}
+
+@keyframes color {
+  100% {
+    color: #49767e;
+  }
+}

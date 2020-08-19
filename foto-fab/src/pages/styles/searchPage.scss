@@ -1,0 +1,36 @@
+.photos-collection-users {
+  display: flex;
+  justify-content: space-between;
+  div {
+    margin: 10px;
+    .link {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.513);
+      font-weight: 600;
+      &:hover {
+        color: black;
+      }
+    }
+    .active {
+      color: black;
+    }
+  }
+}
+.searched-query {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 10px;
+  background: linear-gradient(
+    to right,
+    rgb(15, 32, 39),
+    rgb(32, 58, 67),
+    rgb(44, 83, 100)
+  );
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  h1 {
+    font-size: 35px;
+    font-weight: 600;
+  }
+}

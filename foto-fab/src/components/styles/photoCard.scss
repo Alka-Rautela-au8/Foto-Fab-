@@ -1,0 +1,217 @@
+.photo-container {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 10px 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+  justify-content: center;
+
+  .photo-card {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+
+    img {
+      width: 100%;
+      // transition: 0.3s ease-in-out;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      color: #fff;
+      transition: 0.5s ease;
+      background-color: rgba(0, 0, 0, 0.486);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .like-add {
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+          font-family: "Montserrat", sans-serif;
+          margin-right: 20px;
+          margin-top: 20px;
+          height: 40px;
+          width: 40px;
+          border: none;
+          outline: none;
+          border-radius: 3px;
+          cursor: pointer;
+
+          i {
+            color: black;
+          }
+
+          .fa-heart {
+            color: red;
+          }
+        }
+      }
+
+      .view-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        button {
+          font-family: "Montserrat", sans-serif;
+          height: 40px;
+          padding: 10px;
+          font-size: 16px;
+          background-color: green;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &:hover {
+      .overlay {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 680px) {
+  .photo-container {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-auto-flow: dense;
+  }
+
+  .photo-container .photo-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .photo-container .photo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .photo-container {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-auto-flow: dense;
+  }
+
+  .photo-container .photo-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .photo-container .photo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.photographer-download {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .user-info {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .profile-image {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 10px;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  button {
+    font-family: "Montserrat", sans-serif;
+    margin-right: 20px;
+
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+    i {
+      color: rgba(0, 0, 0, 0.424);
+    }
+
+    &:hover {
+      i {
+        color: black;
+      }
+    }
+  }
+}
+
+.tooltip-container {
+  position: relative;
+  &:hover {
+    .tooltip-content {
+      visibility: visible;
+      opacity: 1;
+      transition: 0.25s all ease;
+      transition-delay: 1s;
+      // top: -125px;
+    }
+  }
+}
+.tooltip-content {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 5;
+  top: 150%;
+  margin-left: -70px;
+}
+
+.tooltip-container .tooltip-content::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}

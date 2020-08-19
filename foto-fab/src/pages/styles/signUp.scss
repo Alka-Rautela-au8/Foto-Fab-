@@ -1,0 +1,109 @@
+.signUp {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(210deg, rgb(67, 176, 202) 60%, #d8dff0 60%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  .building-background-container {
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: bottom left;
+    height: 80%;
+    width: 80%;
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.137);
+    display: flex;
+    flex-wrap: wrap;
+    .signUp-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      .shutter-container {
+        height: 90px;
+        width: 100px;
+        img {
+          height: 100%;
+          opacity: 70%;
+        }
+      }
+      .signUp-girl {
+        width: 40%;
+        position: absolute;
+        z-index: 3;
+        top: -100px;
+        // right: 0;
+        right: 600px;
+        img {
+          width: 1000px;
+          height: 839px;
+        }
+      }
+      .singUp-form {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .form {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          z-index: 5;
+
+          input {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            height: 45px;
+            width: 70%;
+            border-radius: 0.5rem;
+            border: none;
+            outline: none;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 16px;
+          }
+          button {
+            font-family: "Montserrat", sans-serif;
+            height: 45px;
+            width: 150px;
+            border-radius: 0.5rem;
+            border: none;
+            outline: none;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #3d5af1;
+            color: #e2f3f5;
+            font-weight: 600;
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .signUp {
+    .building-background-container {
+      .signUp-container {
+        flex-direction: column;
+        .signUp-girl {
+          top: 258px;
+          right: 100px;
+          img {
+            width: 320px;
+            height: 400px;
+          }
+        }
+        .singUp-form {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
