@@ -10,19 +10,15 @@ import ff from "./img/logo.svg";
 import { withRouter } from "react-router-dom";
 class StickyBar extends Component {
   state = {};
-
   handleAboutUs = () => {
     this.props.history.push(`/about`);
   };
-
   handleContactUs = () => {
     this.props.history.push(`/contact`);
   };
-
   handleHomePage = () => {
     this.props.history.push(`/`);
   };
-
   render() {
     return (
       <div className="sticky-container">
@@ -74,13 +70,17 @@ class StickyBar extends Component {
           </li>
           <li>
             {" "}
-            <img width="32" height="32" title="" alt="li" src={li} />
-            <p>Linkedin</p>
+            <a
+              href="https://www.linkedin.com/company/foto-fab"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              <img width="32" height="32" title="" alt="li" src={li} />
+              <p>Linkedin</p>
+            </a>
           </li>
         </ul>
       </div>
     );
   }
 }
-
 export default withRouter(StickyBar);
