@@ -1,6 +1,8 @@
-# [foto-fab] https://foto-fab.herokuapp.com/
+# foto-fab
 
 webapp from where one can download high resolution images created using unsplash API
+
+live on heroku >> https://foto-fab.herokuapp.com/
 
 
 technologies used: 
